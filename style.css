@@ -1,4 +1,32 @@
-html {
-  height: 100%;
-  width: 100%;
-}
+
+  h1 {
+    background-color: #f03;
+    border-bottom: thin solid #003;
+    text-align: center;
+    margin: 35px;
+  }
+  h2 {
+    color: #333;
+    font-weight: bold;
+  }
+  p {
+    font-family: Georgia, serif;
+    color: #030;
+    padding: 15px;
+  }
+  li {
+    font-family: Arial, sans-serif;
+    background-color: gray;
+    color: black;
+    font-weight: bold;
+    font-size: 18pt;
+  }
+  a {
+    color: #CC0000;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  a:hover {
+    color: #060;
+  }
+
