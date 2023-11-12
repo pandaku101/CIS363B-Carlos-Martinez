@@ -1,7 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
-  style.css
+  .slideshow-container {
+    position: relative;
+    max-width: 800px;
+    max-height: 800px;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .caption-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  .slideshow-container:hover .caption-bar {
+    opacity: 1;
+  }
 </style>
 
 <head>
@@ -17,13 +45,74 @@
   <h2>Hyperlinks</h2>
 
   <a href="about.html">My About Page</a>
+
+  <div class="slideshow-container">
+    <!-- Slides -->
+    <div class="mySlides">
+      <img src="images/blackbear.jpg" style="width:800px">
+      <div class="caption-bar">
+        <p class="text">Black Bear</p>
+      </div>
+    </div>
+
+    <div class="mySlides">
+      <img src="images/brownbear.jpg" style="width:800px">
+      <div class="caption-bar">
+        <p class="text">Brown Bear</p>
+      </div>
+    </div>
+
+    <div class="mySlides">
+      <img src="images/pandabear.jpg" style="width:800px">
+      <div class="caption-bar">
+        <p class="text">Panda Bear</p>
+      </div>
+    </div>
+
+    <div class="mySlides">
+      <img src="images/polarbear.jpg" style="width:800px">
+      <div class="caption-bar">
+        <p class="text">Polar Bear</p>
+      </div>
+    </div>
+
+    <div class="mySlides">
+      <img src="images/koalabear.jpg" style="width:800px">
+      <div class="caption-bar">
+        <p class="text">Koala Bearko</p>
+      </div>
+    </div>
+
+  </div>
+
   <h2>List Items</h2>
-  <img src="Panda.png" height="200" width="500">
+
   <ul>
     <li><a href="index.html">Home</li>
     <li><a href="about.html">About</li>
     <li><a href="news.html">News</li>
   </ul>
 </body>
+
+<script>
+  
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 5000);
+  }
+</script>
+
 
 </html>
