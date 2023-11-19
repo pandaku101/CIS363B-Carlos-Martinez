@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-12">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Database Administrator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script>
+
+    function displayDate() {
+
+      var today = new Date();
+
+      var thisDay = today.getDate();
+      var thisMonth = today.getMonth() + 1;
+      var thisYear = today.getFullYear();
+
+
+      var formattedDate = "Today's date " + thisMonth + "/" + thisDay + "/" + thisYear + "<br>";
+      document.getElementById("dateDisplay").innerHTML = formattedDate;
+    }
+  </script>
+</head>
+
+
+<body>
+  <h1>Database Administrator </h1>
+  <p>A Database Administrator (DBA) is a professional responsible for designing, implementing, maintaining, and managing
+    an organization's databases. Their primary role is to ensure that databases operate efficiently, securely, and
+    reliably to support the organization's data needs.</p>
+  <h2>Reasons I want to be a DBA</h2>
+  <h3>Critical Role in Data Management</h3>
+  <p>DBAs are crucial in managing and organizing an organization's data. They ensure data integrity, security, and
+    availability, essential for business operations.</p>
+  <h3>Job Security</h3>
+  <p>As long as organizations rely on databases to store and manage their data, database administrators will be needed.
+    This contributes to job security in the field.</p>
+  <h3>Contribution to Business Success</h3>
+  <p>Effective database management is critical for the success of business applications. DBAs contribute to the
+    efficiency and effectiveness of these applications, ultimately supporting the business's overall success.</p>
+
+
+
+
+
+  <ul>
+    <li><a href="index.html">Home</li>
+    <li><a href="about.html">About</li>
+    <li><a href="news.html">News</li>
+    <li><a href="style.css">style</li>
+    <li><a href="DBA.html">DBA</li>
+    <li><a href="DBAOpportunities.html">DBA, Why?</li>
+  </ul>
+  <footer>
+    <p id="dateDisplay"></p>
+  </footer>
+
+
+  <script>
+    displayDate();
+  </script>
+
+</body>
+
+</html>
